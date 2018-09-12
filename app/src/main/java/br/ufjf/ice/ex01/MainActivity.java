@@ -11,6 +11,10 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final int ADD_STUDENT = 0;
+    private static final int ADD_SERVER = 1;
+    private static final int ADD_EXTERNAL = 2;
+
     private Button studentBtn;
     private Button serverBtn;
     private Button externalBtn;
@@ -36,23 +40,23 @@ public class MainActivity extends AppCompatActivity {
         int countServers = 0;
         int countExternals = 0;
 
-        studentCounter.setText(countStudents);
-        serverCounter.setText(countServers);
-        externalCounter.setText(countExternals);
+        studentCounter.setText(Integer.toString(countStudents));
+        serverCounter.setText(Integer.toString(countServers));
+        externalCounter.setText(Integer.toString(countExternals));
 
         studentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, StudentActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, ADD_STUDENT);
             }
         });
 
         serverBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, StudentActivity.class);
-                startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, ServerActivity.class);
+                startActivityForResult(intent, ADD_SERVER);
             }
         });
 
@@ -60,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ExternalActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, ADD_EXTERNAL);
             }
         });
     }

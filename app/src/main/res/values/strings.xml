@@ -9,9 +9,10 @@
     <string name="insert_name_label">Nome</string>
     <string name="insert_student_id_label">Matrícula</string>
     <string name="add_server_title">Adicionar Servidor</string>
-    <string name="add_student_title">Adicionar Servidor</string>
-    <string name="add_external_title">Adicionar Servidor</string>
+    <string name="add_student_title">Adicionar Aluno</string>
+    <string name="add_external_title">Adicionar Externo</string>
     <string name="insert_server_id_label">SIAPE</string>
     <string name="insert_external_mail_label">E-mail</string>
     <string name="register_button">Cadastrar</string>
+    <string name="last_register">Último Registro</string>
 </resources>
