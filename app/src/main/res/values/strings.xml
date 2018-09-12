@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ex01</string>
+    <string name="students_counter_label">Alunos</string>
+    <string name="servers_counter_label">Servidores</string>
+    <string name="externals_counter_label">Externos</string>
+    <string name="add_student_button">+Aluno</string>
+    <string name="add_server_button">+Servidor</string>
+    <string name="add_external_button">+Externo</string>
+</resources>
