@@ -14,11 +14,10 @@
         android:layout_marginRight="100dp"
         android:layout_marginTop="44dp"
         android:ems="10"
+        android:hint="@string/insert_name_label"
         android:inputType="textPersonName"
-        android:text="@string/insert_name_label"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/server_title"
-        tools:text="@string/insert_name_label" />
+        app:layout_constraintTop_toBottomOf="@+id/server_title" />
 
     <EditText
         android:id="@+id/server_id_input"
@@ -28,8 +27,8 @@
         android:layout_marginRight="100dp"
         android:layout_marginTop="12dp"
         android:ems="10"
+        android:hint="@string/insert_server_id_label"
         android:inputType="textPersonName"
-        android:text="@string/insert_server_id_label"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/server_name_input" />
 

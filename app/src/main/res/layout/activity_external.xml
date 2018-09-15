@@ -14,8 +14,8 @@
         android:layout_marginRight="100dp"
         android:layout_marginTop="28dp"
         android:ems="10"
+        android:hint="@string/insert_external_mail_label"
         android:inputType="textEmailAddress"
-        android:text="@string/insert_external_mail_label"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/external_name_input" />
 
@@ -27,11 +27,10 @@
         android:layout_marginRight="100dp"
         android:layout_marginTop="36dp"
         android:ems="10"
+        android:hint="@string/insert_name_label"
         android:inputType="textPersonName"
-        android:text="@string/insert_name_label"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/external_title"
-        tools:text="@string/insert_name_label" />
+        app:layout_constraintTop_toBottomOf="@+id/external_title" />
 
     <TextView
         android:id="@+id/external_title"
